@@ -1,0 +1,49 @@
+.Option {
+    width: 100%;
+    transition: transform 1000ms;
+}
+
+.slide-from-left {
+    animation-duration: 1000ms;
+    animation-name: slide-from-left;
+}
+
+.slide-from-right {
+    animation-duration: 1000ms;
+    animation-name: slide-from-right;
+}
+
+@keyframes slide-from-left {
+    from {
+        transform: translate(-100%);
+    }
+
+    to {
+        transform: translate(0%);
+    }
+}
+
+@keyframes slide-from-right {
+    from {
+        transform: translate(100%);
+    }
+
+    to {
+        transform: translate(0%);
+    }
+}
+
+.Option.left-side {    
+    transform: translate(-100%);
+}
+
+.Option.right-side {    
+    transform: translate(-100%);
+}
+
+.Option.slide-in {    
+    transform: translate(0);
+    transition: transform 1000ms ease-in-out;
+}
+
+
