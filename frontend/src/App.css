@@ -1,0 +1,19 @@
+.App {
+  background-color: #4972b9;
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App > * {
+  flex: 1 100%;
+}
+
+.App-link {
+  color: #09d3ac;
+}
